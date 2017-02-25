@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+  <div id="container">
+    <p>
+      Para usar, entre no SIA, acesse <code>Período Letivo &gt; Início do Período &gt; Planejamento das Disciplinas</code>, selecione a disciplina e clique em <code>alterar (ícone do lápis)</code> e cole seu planejamento na caixa abaixo usando colunas delimitadas por caracteres como: espaço, ";", "|", ",", etc. Para funcionar, basta ser consistente. No exemplo a seguir é usado o <code>;</code>:
+    </p>
+<pre>1;10/03/2017;Atividades para este horário
+1;10/03/2017;Atividades para este horário
+1;17/03/2017;Atividades para este horário</pre>
+    <small>
+      Os dados são, respectivamente, o período (bim ou sem com um dígito), data (no formato dd/mm/aaaa) e descrição da atividade.
+    </small>
+    <p>
+      Para concluir, clique em <em>Preencher planejamento</em>
+      e veja a mágica acontecer ;)
+    </p>
+    <textarea placeholder="cole aqui seu planejamento"></textarea>
+    <br />
+    <button>Preencher planejamento</button>
+    <br />
+    <p>
+      <small>
+        Funcionalidades futuras: cálculo automático das datas, assistente para preenchimento das notas e faltas.
+      </small>
+    </p>
+    <p>
+      <small>
+        Tu podes fazer o planejamento no Excel, Calc ou Google spreadsheets e então pedir para exportar/salvar/baixar como CSV!
+      </small>
+    </p>
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>
