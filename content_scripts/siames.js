@@ -16,7 +16,7 @@ function siames(request, sender, sendResponse) {
   split.forEach(function(line) {  //               <|15
     if (line.length < 15) return; // 1;02/03/2017;Atividade da aula
     let separator = line.trim().charAt(1);
-    let regex = new RegExp("(\\d{1})\\" +
+    let regex = new RegExp("(.{1})\\" +
                 separator + "+(\\d{2}\\/\\d{2}\\/\\d{4})\\" +
                 separator + "+(.*)");
     let columns = regex.exec(line);
